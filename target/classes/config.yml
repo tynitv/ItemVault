@@ -1,0 +1,9 @@
+# ========================================================
+#              ItemVault Configuration File
+# ========================================================
+
+default-rows: 6
+messages:
+  prefix: "<gradient:#F857A6:#FF5858><bold>ItemVault</bold></gradient> <gray>»</gray> "
+  title: "<gradient:#F857A6:#FF5858><bold>Coffre Virtuel #1</bold></gradient>"
+  opened: "<prefix><green>Ouverture du coffre virtuel...</green>"
