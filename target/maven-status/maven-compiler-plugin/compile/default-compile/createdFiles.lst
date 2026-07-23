@@ -1,3 +1,4 @@
 fr\tynitv\itemvault\command\VaultCommand.class
+fr\tynitv\itemvault\command\VaultTabCompleter.class
 fr\tynitv\itemvault\vault\VaultManager.class
 fr\tynitv\itemvault\ItemVault.class

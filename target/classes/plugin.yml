@@ -1,10 +1,14 @@
 name: ItemVault
-version: '1.0.0'
+version: '1.1.0'
 main: fr.tynitv.itemvault.ItemVault
 api-version: '1.20'
-description: Virtual Vault Storage Engine for Paper 1.21.x
+prefix: ItemVault
+authors: [TyniTV]
+description: Virtual Player Vaults with Multi-Vaults and Tab Completion for Paper 1.21.x
+
 commands:
   pv:
-    description: Ouvrir votre coffre virtuel
+    description: Main command for ItemVault
+    aliases: [vault, playervault, playervaults]
     permission: itemvault.use
-    aliases: [vault, playervault]
+    usage: /pv [numéro|admin|reload]

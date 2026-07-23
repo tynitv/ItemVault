@@ -1,6 +1,7 @@
 package fr.tynitv.itemvault;
 
 import fr.tynitv.itemvault.command.VaultCommand;
+import fr.tynitv.itemvault.command.VaultTabCompleter;
 import fr.tynitv.itemvault.vault.VaultManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -18,9 +19,10 @@ public class ItemVault extends JavaPlugin {
 
         if (getCommand("pv") != null) {
             getCommand("pv").setExecutor(new VaultCommand(this, vaultManager));
+            getCommand("pv").setTabCompleter(new VaultTabCompleter());
         }
 
-        getLogger().info("ItemVault v1.0.0 enabled!");
+        getLogger().info("ItemVault v1.1.0 enabled with Multi-Vaults & TabCompleter!");
     }
 
     @Override
@@ -30,5 +32,9 @@ public class ItemVault extends JavaPlugin {
 
     public static ItemVault getInstance() {
         return instance;
+    }
+
+    public VaultManager getVaultManager() {
+        return vaultManager;
     }
 }
